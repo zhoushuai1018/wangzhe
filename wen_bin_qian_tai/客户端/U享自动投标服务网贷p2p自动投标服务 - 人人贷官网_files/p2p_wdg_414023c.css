@@ -1,0 +1,828 @@
+.premium-form .disabled-input-text {
+	padding-top: 7px;
+}
+.premium-form .disabled-input-text-left {
+	width: 166px; padding-top: 7px;
+}
+.premium-form .submit-wrap {
+	margin-left: 80px;
+}
+.premium-form .input-div {
+	margin: 0px auto; width: 600px; height: 56px; padding-bottom: 0px;
+}
+.premium-result .rate-wrap {
+	padding: 20px 0px;
+}
+.premium-result .rate-wrap > div {
+	width: 33.3%; text-align: center; color: rgb(153, 153, 153); font-size: 15px; float: left;
+}
+.premium-result .rate-wrap .percent {
+	color: rgb(255, 114, 31);
+}
+.premium-result .rate-wrap .font-bold {
+	color: rgb(85, 85, 85); font-weight: 500;
+}
+.premium-result .result-table {
+	padding: 0px 20px;
+}
+.premium-result .result-table .t-header {
+	background-color: rgb(250, 250, 250);
+}
+.premium-result .result-table .table-wrap {
+	display: none;
+}
+.premium-result .result-table table {
+	width: 100%; text-align: center; color: rgb(153, 153, 153);
+}
+.premium-result .result-table table th {
+	height: 40px; color: rgb(85, 85, 85); line-height: 40px;
+}
+.premium-result .result-table table td {
+	height: 59px; line-height: 59px;
+}
+.premium-result .result-table table th {
+	border: 1px solid rgb(213, 213, 213); border-image: none; width: 33.3%; text-align: center;
+}
+.premium-result .result-table table td {
+	border: 1px solid rgb(213, 213, 213); border-image: none; width: 33.3%; text-align: center;
+}
+.premium-result .result-table table .t-orange {
+	color: rgb(255, 114, 31);
+}
+.premium-result .result-table .tip-text {
+	color: rgb(206, 206, 206); padding-top: 10px; font-size: 12px;
+}
+.premium-result-pb20 {
+	padding-bottom: 20px;
+}
+.ui-tab {
+	margin: 0px; padding: 0px;
+}
+.ui-tab ul {
+	list-style: none; margin: 0px; padding: 0px;
+}
+.ui-tab li {
+	list-style: none; top: 1px; vertical-align: top; position: relative;
+}
+.ui-tab-items {
+	font-size: 14px; border-bottom-color: rgb(229, 229, 229); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.ui-tab-item {
+	float: left;
+}
+.ui-tab-item a {
+	padding: 0px 10px; height: 32px; color: rgb(77, 77, 77); line-height: 32px; border-bottom-color: currentColor; border-bottom-width: 0px; border-bottom-style: none; float: left; cursor: pointer;
+}
+.ui-tab-item a {
+	color: rgb(77, 77, 77);
+}
+.ui-tab-item a:hover {
+	color: rgb(77, 77, 77);
+}
+.ui-tab-item a:active {
+	color: rgb(77, 77, 77);
+}
+.ui-tab-item-current a {
+	height: 33px; font-weight: 700;
+}
+.ui-tab-item a:hover {
+	background: rgb(246, 246, 246); text-decoration: none;
+}
+.ui-tab-item-current a:hover {
+	background: rgb(255, 255, 255);
+}
+.ui-tab-content {
+	vertical-align: middle; display: none;
+}
+.ui-tab-align {
+	vertical-align: middle;
+}
+.ui-tab-content-current {
+	display: block;
+}
+.ui-tab-transparent .ui-tab-items {
+	border-bottom-color: currentColor; border-bottom-width: 0px; border-bottom-style: none;
+}
+.ui-tab-transparent .ui-tab-item {
+	position: relative;
+}
+.ui-tab-transparent .ui-tab-item a {
+	border: 0px currentColor; border-image: none; color: rgb(153, 153, 153); font-size: 16px;
+}
+.ui-tab-transparent .ui-tab-item a {
+	font-weight: 400;
+}
+.ui-tab-transparent .ui-tab-item a:hover {
+	font-weight: 400;
+}
+.ui-tab-transparent .ui-tab-item a:active {
+	font-weight: 400;
+}
+.ui-tab-transparent .ui-tab-item-current {
+	background: rgb(255, 255, 255); border-top-color: rgb(0, 168, 232); border-top-width: 4px; border-top-style: solid;
+}
+.ui-tab-transparent .ui-tab-item:hover {
+	background: rgb(255, 255, 255); border-top-color: rgb(0, 168, 232); border-top-width: 4px; border-top-style: solid;
+}
+.ui-tab-transparent .ui-tab-item-current a {
+	padding: 0px 35px; color: rgb(71, 71, 71); border-top-color: currentColor; border-top-width: 0px; border-top-style: none;
+}
+.ui-tab-transparent .ui-tab-item:hover a {
+	padding: 0px 35px; color: rgb(71, 71, 71); border-top-color: currentColor; border-top-width: 0px; border-top-style: none;
+}
+.ui-tab-transparent .ui-tab-item-current a.ui-tab-item-link {
+	border-right-color: rgb(224, 224, 224); border-left-color: rgb(224, 224, 224); border-right-width: 1px; border-left-width: 1px; border-right-style: solid; border-left-style: solid;
+}
+.ui-tab-blue {
+	padding-bottom: 1px; border-bottom-color: rgb(57, 164, 211); border-bottom-width: 3px; border-bottom-style: solid;
+}
+.ui-tab-blue ul {
+	width: 1000px;
+}
+.ui-tab-blue li {
+	background: rgb(225, 228, 233); width: 188px; height: 60px; text-align: center; overflow: hidden; font-size: 18px; margin-right: 5px; float: left; cursor: pointer;
+}
+.ui-tab-blue li a {
+	padding: 0px; color: rgb(34, 34, 34);
+}
+.ui-tab-blue li.ui-tab-item-current {
+	background: rgb(59, 175, 218);
+}
+.ui-tab-blue li:hover {
+	background: rgb(59, 175, 218);
+}
+.ui-tab-blue li.ui-tab-item-current a {
+	background: rgb(56, 172, 219); color: rgb(255, 255, 255); font-weight: 400;
+}
+.ui-tab-blue li:hover a {
+	background: rgb(56, 172, 219); color: rgb(255, 255, 255); font-weight: 400;
+}
+.ui-tab-blue a {
+	height: 56px; line-height: 56px; margin-top: 4px; display: block;
+}
+.ui-tab-blue .ui-tab-item-current a.ui-tab-item-link {
+	background: rgb(56, 172, 219);
+}
+.ui-tab-blue li.ui-tab-item-current a {
+	color: rgb(255, 255, 255); font-weight: 400;
+}
+.ui-tab-blue li:hover a {
+	color: rgb(255, 255, 255); font-weight: 400;
+}
+.ui-tab-item-link .block {
+	background: 0px 0px rgb(0, 168, 232); padding: 0px 5px; border-radius: 5px; color: rgb(255, 255, 255); font-weight: 700; margin-left: 10px; display: inline;
+}
+.ui-tab {
+	background: rgb(249, 249, 249); color: rgb(132, 132, 132); position: relative;
+}
+.ui-tab-transparent .loans-return-link {
+	top: 5px; right: 0px; position: absolute;
+}
+.ui-tab-transparent .ui-tab-item a {
+	height: 50px; color: rgb(132, 132, 132); line-height: 50px; font-weight: 400;
+}
+.ui-tab-transparent .ui-tab-item-current a {
+	height: 50px; color: rgb(43, 43, 43); line-height: 50px; font-weight: 400;
+}
+.ui-tab-transparent .ui-tab-item {
+	margin: 0px; padding: 0px; border-top-color: rgb(249, 249, 249); border-top-width: 2px; border-top-style: solid;
+}
+.ui-tab-transparent .ui-tab-item-2 {
+	width: 50%;
+}
+.ui-tab-transparent .ui-tab-item-3 {
+	width: 33.33%;
+}
+.ui-tab-transparent .ui-tab-item-4 {
+	width: 25%;
+}
+.ui-tab-transparent .ui-tab-item-5 {
+	width: 20%;
+}
+.ui-tab-transparent .ui-tab-item-link {
+	margin: 0px; padding: 0px; width: 100%; text-align: center;
+}
+.ui-tab-transparent .ui-tab-item-current {
+	background: rgb(255, 255, 255); border-top-color: rgb(58, 132, 207); border-top-width: 2px; border-top-style: solid;
+}
+.ui-tab-transparent .ui-tab-item:hover {
+	border-top-color: rgb(246, 246, 246); border-top-width: 2px; border-top-style: solid;
+}
+.ui-tab-transparent .ui-tab-item-current a {
+	margin: 0px; padding: 0px; text-align: center;
+}
+.ui-tab-transparent .ui-tab-item:hover a {
+	margin: 0px; padding: 0px; text-align: center;
+}
+.ui-tab-transparent .ui-tab-item-current a.ui-tab-item-link {
+	border-right-color: currentColor; border-left-color: currentColor; border-right-width: 0px; border-left-width: 0px; border-right-style: none; border-left-style: none;
+}
+.mr-detail {
+	background: rgb(255, 255, 255); width: 1080px; height: auto; overflow: hidden; margin-bottom: 12px;
+}
+.mr-detail .top {
+	padding: 0px 20px; width: 1040px; height: 50px; border-bottom-color: rgb(244, 244, 244); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.mr-detail .top .le {
+	width: auto; height: 50px; line-height: 50px; float: left; display: block;
+}
+.mr-detail .top .le span {
+	color: rgb(43, 43, 43); padding-right: 30px; font-size: 16px;
+}
+.mr-detail .top .le em {
+	color: rgb(136, 136, 136); font-size: 14px;
+}
+.mr-detail .top .ri {
+	width: auto; height: 50px; color: rgb(58, 132, 207); line-height: 50px; font-size: 14px; float: right; display: block;
+}
+.mr-detail .data-detail {
+	width: 1060px; height: auto; overflow: hidden; padding-left: 20px;
+}
+.mr-detail .data-detail .de-left {
+	width: 860px; height: 220px; float: left;
+}
+.mr-detail .data-detail .de-left ul {
+	padding: 30px 0px; width: 860px; height: 160px; display: block;
+}
+.mr-detail .data-detail .de-left ul li {
+	width: 860px; height: 35px;
+}
+.mr-detail .data-detail .de-left ul li span {
+	width: 215px; height: 35px; color: rgb(141, 141, 141); line-height: 35px; font-size: 14px; float: left; display: block;
+}
+.mr-detail .data-detail .de-left ul li span.num {
+	font-size: 18px;
+}
+.mr-detail .data-detail .de-left ul li span.yellow {
+	color: rgb(255, 119, 28);
+}
+.mr-detail .data-detail .de-left ul .gray span {
+	color: rgb(43, 43, 43); font-size: 16px;
+}
+.mr-detail .data-detail .de-left ul .cen {
+	padding-bottom: 20px;
+}
+.mr-detail .data-detail .de-right {
+	width: 200px; height: 220px; float: left; position: relative;
+}
+.mr-detail .data-detail .de-right .button {
+	background: rgb(255, 119, 28); left: 0px; top: 60px; width: 180px; height: 34px; text-align: center; color: rgb(255, 255, 255); line-height: 34px; font-size: 14px; display: block; position: absolute; cursor: pointer;
+}
+.mr-detail .data-detail .de-right .cancel {
+	background: rgb(225, 225, 225); left: 0px; top: 60px; width: 180px; height: 34px; text-align: center; color: rgb(255, 255, 255); line-height: 34px; font-size: 14px; display: block; position: absolute; cursor: pointer;
+}
+.mr-detail .data-detail .de-right .profit {
+	background: url("/ps/static/p2p/widget/monthrise/detail/assets/profit_73e143f.png") no-repeat; width: 124px; height: 110px; right: 0px; bottom: 0px; display: block; position: absolute;
+}
+.mr-detail .data-detail .de-right .outing {
+	background: url("/ps/static/p2p/widget/monthrise/detail/assets/outing_d1bcece.png") no-repeat; width: 124px; height: 110px; right: 0px; bottom: 0px; display: block; position: absolute;
+}
+.mr-detail .data-detail .de-right .out {
+	background: url("/ps/static/p2p/widget/monthrise/detail/assets/out_4d6bdc7.png") no-repeat; width: 124px; height: 110px; right: 0px; bottom: 0px; display: block; position: absolute;
+}
+.applyout-dialog .j-dialog-btn-con .j-btn.j-btn-small {
+	margin-top: 20px;
+}
+.applyout-dialog .j-dialog-btn-con .j-btn.btn-sure {
+	margin-right: 35px;
+}
+.applyout-dialog .j-dialog-btn-con .j-btn.btn-cancel {
+	margin-left: 35px;
+}
+.rate-echart {
+	background: rgb(255, 255, 255); width: 1080px; height: auto; overflow: hidden; padding-bottom: 10px; margin-bottom: 12px;
+}
+.rate-echart .title {
+	width: 1080px; height: 50px; color: rgb(43, 43, 43); line-height: 50px; text-indent: 20px; font-size: 16px; border-bottom-color: rgb(244, 244, 244); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.rate-echart .echart-data {
+	margin: 40px 46px 0px; width: 988px; height: 272px; position: relative;
+}
+.rate-echart .echart-data .echart-cen {
+	width: 988px; height: 272px; overflow: hidden; position: relative; z-index: 1;
+}
+.rate-echart .echart-data .echart-cen div.center {
+	margin: 0px auto;
+}
+.rate-echart .echart-data .echart-cen div.position {
+	left: 0px; top: 0px; position: absolute;
+}
+.rate-echart .echart-data .echart-cen .position-div {
+	width: 988px; height: 272px;
+}
+.rate-echart .echart-data .echart-cen .position-div ul {
+	width: 100%; height: 272px;
+}
+.rate-echart .echart-data .echart-cen .position-div ul li {
+	width: 76px; height: 272px; float: left; display: block;
+}
+.rate-echart .echart-data .echart-cen .position-div ul li .blank {
+	width: 76px; height: 0px; display: block;
+}
+.rate-echart .echart-data .echart-cen .position-div ul li .icon {
+	width: 76px; height: 6px; display: block;
+}
+.rate-echart .echart-data .echart-cen .position-div ul li .icon em {
+	background: url("/ps/static/p2p/widget/monthrise/rateEchart/assets/icon_ed5b098.png") no-repeat 0% 0% / 100% 100%; margin: 0px auto; width: 12px; height: 6px; display: block;
+}
+.rate-echart .echart-data .echart-cen .position-div ul li .icon2 {
+	width: 76px; height: 6px; display: block;
+}
+.rate-echart .echart-data .echart-cen .position-div ul li .num {
+	width: 76px; height: 46px; text-align: center; color: rgb(43, 43, 43); line-height: 46px; font-size: 16px; display: block;
+}
+.rate-echart .echart-data .echart-cen .position-div ul li .bar {
+	background: rgb(242, 242, 242); margin: 0px auto; border-radius: 4px; width: 30px; height: 150px; display: block;
+}
+.rate-echart .echart-data .echart-cen .position-div ul li .month {
+	width: 76px; height: 70px; text-align: center; color: rgb(43, 43, 43); line-height: 70px; font-size: 16px; display: block;
+}
+.rate-echart .echart-data .echart-cen .position-div ul .selected .num {
+	color: rgb(255, 119, 28);
+}
+.rate-echart .echart-data .echart-cen .position-div ul .selected .month {
+	color: rgb(255, 119, 28);
+}
+.rate-echart .echart-data .echart-cen .position-div ul .selected .bar {
+	background: rgb(255, 119, 28);
+}
+.rate-echart .echart-data .echart-le {
+	left: -44px; top: 80px; width: 20px; height: 80px; position: absolute; z-index: 99; cursor: pointer;
+}
+.rate-echart .echart-data .to-left-lan {
+	background: url("/ps/static/p2p/widget/monthrise/rateEchart/assets/lan-l_276e41c.jpg") no-repeat;
+}
+.rate-echart .echart-data .to-left-lan:hover {
+	background: url("/ps/static/p2p/widget/monthrise/rateEchart/assets/le_39fa920.jpg") no-repeat;
+}
+.rate-echart .echart-data .to-left-gray {
+	background: url("/ps/static/p2p/widget/monthrise/rateEchart/assets/le_39fa920.jpg") no-repeat;
+}
+.rate-echart .echart-data .to-right-lan {
+	background: url("/ps/static/p2p/widget/monthrise/rateEchart/assets/lan-r_8f0cc80.jpg") no-repeat;
+}
+.rate-echart .echart-data .to-right-lan:hover {
+	background: url("/ps/static/p2p/widget/monthrise/rateEchart/assets/ri_57e7939.png") no-repeat;
+}
+.rate-echart .echart-data .to-right-gray {
+	background: url("/ps/static/p2p/widget/monthrise/rateEchart/assets/ri_57e7939.png") no-repeat;
+}
+.rate-echart .echart-data .echart-ri {
+	top: 80px; width: 20px; height: 80px; right: -44px; position: absolute; z-index: 99; cursor: pointer;
+}
+.record-wrap {
+	background: rgb(255, 255, 255); margin: 0px auto; width: 1080px; padding-bottom: 20px;
+}
+.record-wrap .title {
+	padding: 0px 20px; height: 60px; color: rgb(0, 0, 0); line-height: 60px; font-size: 16px; border-bottom-color: rgb(238, 238, 238); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.record-wrap .list-wrap {
+	padding: 0px 20px; font-size: 14px;
+}
+.record-wrap .caption {
+	background: rgb(250, 250, 250); height: 50px; color: rgb(168, 168, 168); display: flex; justify-content: flex-start; align-items: center; -webkit-box-pack: start; -webkit-justify-content: flex-start; -webkit-box-align: center; -webkit-align-items: center;
+}
+.record-wrap .caption .id {
+	width: 100px; padding-left: 25px;
+}
+.record-wrap .caption .money {
+	width: 140px; text-align: right;
+}
+.record-wrap .caption .count {
+	width: 200px; text-align: center; margin-left: 60px;
+}
+.record-wrap .caption .time {
+	width: 200px; text-align: center;
+}
+.record-wrap .caption .status {
+	width: 200px; text-align: center;
+}
+.record-wrap .record-list-item {
+	height: 50px; color: rgb(43, 43, 43); display: flex; justify-content: flex-start; align-items: center; -webkit-box-pack: start; -webkit-justify-content: flex-start; -webkit-box-align: center; -webkit-align-items: center;
+}
+.record-wrap .record-list-item.even {
+	background: rgb(250, 250, 250);
+}
+.record-wrap .record-list-item .id {
+	width: 100px; color: rgb(58, 132, 207); padding-left: 25px; cursor: pointer;
+}
+.record-wrap .record-list-item .id img {
+	vertical-align: sub; display: inline-block;
+}
+.record-wrap .record-list-item .id span {
+	padding-left: 5px;
+}
+.record-wrap .record-list-item .money {
+	width: 140px; text-align: right;
+}
+.record-wrap .record-list-item .count {
+	width: 200px; text-align: center; margin-left: 60px;
+}
+.record-wrap .record-list-item .time {
+	width: 200px; text-align: center;
+}
+.record-wrap .record-list-item .status {
+	width: 200px; text-align: center;
+}
+.record-wrap .record-list-item .contract {
+	width: 95px; text-align: right; color: rgb(58, 132, 207); cursor: pointer;
+}
+.record-wrap .ui-list-group {
+	width: 100%;
+}
+.record-wrap .ui-list-group .ui-list-row {
+	padding: 0px; width: 100%;
+}
+.history-box {
+	background: rgb(255, 255, 255); margin: 0px auto; width: 1080px; color: rgb(51, 51, 51); font-size: 14px;
+}
+.history-box .title-box {
+	background: rgb(244, 244, 244); padding: 5px 0px 25px; color: rgb(0, 0, 0); font-size: 18px; font-weight: 400;
+}
+.history-box .title-box .safe-tip {
+	color: rgb(153, 153, 153); font-size: 12px;
+}
+.history-box .title-box .safe-tip::before {
+	background: rgb(226, 228, 231); margin: 0px 15px; top: 3px; width: 1px; height: 15px; display: inline-block; position: relative; content: "";
+}
+.history-box .react-history-table {
+	width: 100%; line-height: 60px; border-bottom-color: rgb(246, 246, 246); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.history-box .react-history-table tr:nth-child(2n+1) {
+	background: rgb(250, 250, 250);
+}
+.history-box .react-history-table .table-head {
+	color: rgb(153, 153, 153); background-color: rgb(255, 255, 255) !important;
+}
+.history-box .react-history-table .status {
+	width: 155px; text-align: center; padding-left: 0px;
+}
+.history-box .react-history-table .orange {
+	color: rgb(255, 120, 45);
+}
+.history-box .react-history-table em {
+	font-size: 10px; -webkit-text-size-adjust: none;
+}
+.history-box .react-history-table th {
+	padding-left: 23px; border-right-color: rgb(246, 246, 246); border-right-width: 1px; border-right-style: solid;
+}
+.history-box .react-history-table td {
+	padding-left: 23px; border-right-color: rgb(246, 246, 246); border-right-width: 1px; border-right-style: solid;
+}
+.history-box .react-history-table a {
+	color: rgb(51, 51, 51); display: block;
+}
+.history-box .react-history-table a:hover {
+	color: rgb(58, 132, 207);
+}
+.history-box .react-history-table .btn-part-in {
+	background: rgb(255, 120, 45); padding: 10px 18px; border-radius: 3px; color: rgb(255, 255, 255); line-height: 1; display: inline-block;
+}
+.history-box .react-history-table .btn-part-in:hover {
+	color: rgb(255, 255, 255);
+}
+.history-box .react-history-table .rate {
+	color: rgb(255, 120, 45);
+}
+.history-box .ui-pagination {
+	padding: 20px 0px;
+}
+.history-box .ui-pagination ul li.active a {
+	background: rgb(255, 114, 31); border: 1px solid rgb(255, 114, 31); border-image: none; color: rgb(255, 255, 255); cursor: default;
+}
+.history-box .ui-pagination ul li a {
+	border: 1px solid rgb(244, 244, 244); border-image: none; cursor: pointer;
+}
+.history-box .ui-pagination ul li a:hover {
+	background: rgb(255, 114, 31); border: 1px solid rgb(255, 114, 31); border-image: none; color: rgb(255, 255, 255);
+}
+.history-box .ui-pagination ul li.disabled a {
+	background: rgb(235, 235, 235); border: 1px solid rgb(235, 235, 235); border-image: none; color: rgb(153, 153, 153); cursor: default;
+}
+.history-box .ui-pagination .previous.disabled:hover a {
+	background: rgb(235, 235, 235); border: 1px solid rgb(235, 235, 235); border-image: none; color: rgb(153, 153, 153); cursor: default;
+}
+.history-box .ui-pagination .next.disabled:hover a {
+	background: rgb(235, 235, 235); border: 1px solid rgb(235, 235, 235); border-image: none; color: rgb(153, 153, 153); cursor: default;
+}
+.recommend-list .product-box {
+	background: rgb(255, 255, 255); margin: 0px auto 20px; width: 1080px;
+}
+.recommend-list .product-box .product-title-box {
+	line-height: 55px; border-bottom-color: rgb(245, 245, 245); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.recommend-list .product-box .product-title-box .product-label {
+	background: url("/ps/static/p2p/widget/newUser/recommend/assert/label_bg_68e7381.png") no-repeat 100% 100%; margin: 0px 24px; width: 75px; height: 24px; text-align: center; color: rgb(255, 255, 255); line-height: 24px; font-size: 12px; display: inline-block;
+}
+.recommend-list .product-box .title {
+	color: rgb(51, 51, 51); font-size: 16px; margin-right: 27px;
+}
+.recommend-list .product-box .slogan {
+	color: rgb(153, 153, 153); font-size: 12px;
+}
+.recommend-list .product-box .prodect-detail-box {
+	padding: 25px 0px 29px;
+}
+.recommend-list .product-box .prodect-detail-box .col-3 {
+	width: 33%; text-align: center; display: inline-block;
+}
+.recommend-list .product-box .prodect-detail-box .font-36 {
+	font-size: 36px;
+}
+.recommend-list .product-box .prodect-detail-box .orange {
+	color: rgb(255, 114, 31);
+}
+.recommend-list .product-box .prodect-detail-box .left-right-border {
+	border-right-color: rgb(245, 245, 245); border-left-color: rgb(245, 245, 245); border-right-width: 1px; border-left-width: 1px; border-right-style: solid; border-left-style: solid;
+}
+.recommend-list .product-box .prodect-detail-box .black {
+	color: rgb(51, 51, 51);
+}
+.recommend-list .product-box .prodect-detail-box .num-tips {
+	color: rgb(153, 153, 153); line-height: 30px; font-size: 12px;
+}
+.recommend-list .product-box .prodect-detail-box em {
+	font-size: 15px;
+}
+.recommend-list .product-box .prodect-detail-box .detail-link {
+	background: rgb(255, 255, 255); margin: 0px auto; border-radius: 2px; border: 1px solid rgb(255, 114, 31); border-image: none; top: 8px; width: 150px; color: rgb(255, 114, 31); line-height: 30px; font-size: 14px; display: block; position: relative;
+}
+.recommend-list .product-box .prodect-detail-box .detail-link:hover {
+	background: rgb(255, 114, 31); color: rgb(255, 255, 255);
+}
+.recommend-list .product-box .prodect-detail-box .detail-link-big {
+	width: 180px;
+}
+.recommend-list .product-box .prodect-detail-box .number-box {
+	height: 45px; line-height: 45px;
+}
+.wdg-index-banner {
+	width: 100%; height: 295px; position: relative;
+}
+.wdg-index-banner .banner-box {
+	left: 0px; width: 100%; height: 295px; overflow: hidden; display: block;
+}
+.wdg-index-banner .banner-img-box {
+	width: 100%; height: 100%; overflow: hidden; display: block; position: relative;
+}
+.wdg-index-banner .banner-img-box .banner-img {
+	left: 50%; width: 3000px; height: 295px; margin-left: -1500px; position: absolute;
+}
+.wdg-index-banner .uc-amount-box {
+	left: 50%; top: 0px; width: 1080px; margin-left: -540px; position: absolute;
+}
+.wdg-index-banner .uc-amount-box .uc-amount {
+	top: 75px; right: 405px; color: rgb(120, 219, 255); font-family: HelveticaNeueLt; font-size: 70px; font-weight: 700; position: absolute;
+}
+.wdg-index-banner .uc-amount-box .uc-amount .extra-rate-text {
+	font-size: 58px;
+}
+#uplan-index-cal ::-ms-clear {
+	display: none;
+}
+#uplan-index-cal ::-ms-reveal {
+	display: none;
+}
+#uplan-index-cal .ui-cal .borderRight {
+	border-right-color: rgb(235, 235, 235); border-right-width: 1px; border-right-style: solid;
+}
+#uplan-index-cal .ui-cal .cal-right .border-left {
+	border-right-color: rgb(235, 235, 235); border-right-width: 1px; border-right-style: solid;
+}
+#uplan-index-cal .ui-cal .cal-right .border-right {
+	border-right-color: rgb(235, 235, 235); border-right-width: 1px; border-right-style: solid;
+}
+#uplan-index-cal .ui-cal .cal-left {
+	padding: 40px 37px 40px 38px; width: 213px;
+}
+#uplan-index-cal .ui-cal .cal-left .u-input-group {
+	position: relative;
+}
+#uplan-index-cal .ui-cal .cal-left .u-input-group .ui-input {
+	border: 0px currentColor; border-image: none; width: 213px; height: 62px; color: rgb(88, 88, 88); line-height: 62px; font-family: HelveticaNeueLt; font-size: 30px;
+}
+#uplan-index-cal .ui-cal .cal-left .u-input-group .error {
+	height: 20px; color: red; line-height: 20px; font-size: 12px; display: block;
+}
+#uplan-index-cal .ui-cal .cal-left .u-input-group .success-input {
+	border-bottom-color: rgb(235, 235, 235); border-bottom-width: 1px; border-bottom-style: solid;
+}
+#uplan-index-cal .ui-cal .cal-left .u-input-group .error-input {
+	border-bottom-color: red; border-bottom-width: 1px; border-bottom-style: solid;
+}
+#uplan-index-cal .ui-cal .cal-left .u-input-group .unit {
+	top: 12px; right: 0px; color: rgb(88, 88, 88); font-size: 24px; position: absolute;
+}
+#uplan-index-cal .ui-cal .cal-left .button-wrapper {
+	padding-top: 10px;
+}
+#uplan-index-cal .ui-cal .cal-left .button-wrapper .ui-button-cal {
+	background: rgb(255, 120, 45); border: 0px currentColor; border-image: none; width: 213px; height: 40px; color: rgb(255, 255, 255); line-height: 40px; font-size: 14px; cursor: pointer;
+}
+#uplan-index-cal .ui-cal .cal-right .cal-items {
+	width: 355px; padding-top: 20px; padding-bottom: 12px; padding-left: 40px;
+}
+#uplan-index-cal .ui-cal .cal-right .cal-items .item {
+	width: 100%; padding-top: 10px;
+}
+#uplan-index-cal .ui-cal .cal-right .cal-items .item .cal-result {
+	height: 53px;
+}
+#uplan-index-cal .ui-cal .cal-right .cal-items .item .cal-result .title {
+	color: gray; font-size: 14px;
+}
+#uplan-index-cal .ui-cal .cal-right .cal-items .item .cal-result .result {
+	margin-top: 8px;
+}
+#uplan-index-cal .ui-cal .cal-right .cal-items .item .cal-result .result .result-graph {
+	background: rgb(229, 229, 229); width: 185px; height: 4px; margin-right: 30px;
+}
+#uplan-index-cal .ui-cal .cal-right .cal-items .item .cal-result .result .result-graph span {
+	background: rgb(255, 120, 45); width: 0px; height: 4px; display: block;
+}
+#uplan-index-cal .ui-cal .cal-right .cal-items .item .cal-result .result .result-num {
+	top: -12px; width: 139px; color: rgb(255, 120, 45); font-size: 16px; position: relative;
+}
+#uplanIndexData .border-right-gray {
+	border-right-color: rgb(235, 235, 235); border-right-width: 1px; border-right-style: solid;
+}
+#uplanIndexData .ui-invest-dl-info {
+	padding: 30px 0px;
+}
+#uplanIndexData .ui-invest-dl-info dl {
+	width: 358px; text-align: center; color: rgb(88, 88, 88);
+}
+#uplanIndexData .ui-invest-dl-info .number {
+	font-family: HelveticaNeueLt; font-size: 48px;
+}
+#uplanIndexData .ui-invest-dl-info .unit {
+	font-size: 14px;
+}
+#uplanIndexData .ui-invest-dl-info .text {
+	font-size: 16px;
+}
+#uIndexProductListBox {
+	background: rgb(255, 255, 255); margin: 0px auto; width: 1080px; color: rgb(51, 51, 51); font-size: 14px;
+}
+#uIndexProductListBox .title-box {
+	background: rgb(244, 244, 244); padding: 30px 0px; color: rgb(0, 0, 0); font-size: 18px; font-weight: 400;
+}
+#uIndexProductListBox .title-box .safe-tip {
+	color: rgb(153, 153, 153); font-size: 12px;
+}
+#uIndexProductListBox .title-box .safe-tip::before {
+	margin: 0px 15px; content: "|";
+}
+#uIndexProductListBox .react-history-table {
+	width: 100%; border-bottom-color: rgb(250, 250, 250); border-bottom-width: 1px; border-bottom-style: solid;
+}
+#uIndexProductListBox .react-history-table tr:nth-child(2n+1) {
+	background: rgb(250, 250, 250);
+}
+#uIndexProductListBox .react-history-table tr {
+	line-height: 60px;
+}
+#uIndexProductListBox .react-history-table tr:hover {
+	background: rgb(245, 245, 245); cursor: pointer;
+}
+#uIndexProductListBox .react-history-table .table-head {
+	color: rgb(153, 153, 153); background-color: rgb(255, 255, 255) !important;
+}
+#uIndexProductListBox .react-history-table .table-head th {
+	position: relative;
+}
+#uIndexProductListBox .react-history-table .table-head .icon-we-tip-info {
+	position: relative;
+}
+#uIndexProductListBox .react-history-table .table-head .icon-we-tip-info:hover .info-tips-box {
+	display: block;
+}
+#uIndexProductListBox .react-history-table .table-head .info-tips-box {
+	left: 20px; display: none; position: absolute;
+}
+#uIndexProductListBox .react-history-table .table-head .triangle {
+	left: -5px; top: -36px; width: 0px; height: 0px; border-top-color: transparent; border-right-color: rgb(224, 224, 224); border-bottom-color: transparent; border-top-width: 6px; border-right-width: 6px; border-bottom-width: 6px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; position: absolute;
+}
+#uIndexProductListBox .react-history-table .table-head .triangle::before {
+	left: 2px; top: -6px; width: 0px; height: 0px; border-top-color: transparent; border-right-color: rgb(255, 255, 255); border-bottom-color: transparent; border-top-width: 6px; border-right-width: 6px; border-bottom-width: 6px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; position: absolute; z-index: 2; content: "";
+}
+#uIndexProductListBox .react-history-table .table-head .info-tips {
+	background: rgb(255, 255, 255); padding: 5px 10px; border-radius: 3px; border: 1px solid rgb(232, 232, 232); border-image: none; top: -45px; width: 180px; text-align: left; line-height: 1.5; font-size: 12px; display: inline-block; position: absolute; z-index: 1;
+}
+#uIndexProductListBox .react-history-table .status {
+	width: 155px; text-align: center; padding-left: 0px;
+}
+#uIndexProductListBox .react-history-table .orange {
+	color: rgb(255, 120, 45);
+}
+#uIndexProductListBox .react-history-table em {
+	font-size: 10px; -webkit-text-size-adjust: none;
+}
+#uIndexProductListBox .react-history-table th {
+	padding-left: 23px; border-right-color: rgb(235, 235, 235); border-right-width: 1px; border-right-style: solid;
+}
+#uIndexProductListBox .react-history-table td {
+	padding-left: 23px; border-right-color: rgb(235, 235, 235); border-right-width: 1px; border-right-style: solid;
+}
+#uIndexProductListBox .react-history-table a {
+	color: rgb(51, 51, 51); display: block;
+}
+#uIndexProductListBox .react-history-table .hover .btn-part-in {
+	background: rgb(255, 120, 45); padding: 10px 18px; border-radius: 3px; color: rgb(255, 255, 255); line-height: 1; display: inline-block;
+}
+#uIndexProductListBox .react-history-table .rate {
+	color: rgb(255, 120, 45);
+}
+#uIndexProductListBox .ui-pagination {
+	padding: 20px 0px;
+}
+#uIndexProductListBox .ui-pagination ul li.active a {
+	background: rgb(255, 114, 31); border: 1px solid rgb(255, 114, 31); border-image: none; color: rgb(255, 255, 255); cursor: default;
+}
+#uIndexProductListBox .ui-pagination ul li a {
+	border: 1px solid rgb(244, 244, 244); border-image: none; cursor: pointer;
+}
+#uIndexProductListBox .ui-pagination ul li a:hover {
+	background: rgb(255, 114, 31); border: 1px solid rgb(255, 114, 31); border-image: none; color: rgb(255, 255, 255);
+}
+#uIndexProductListBox .ui-pagination ul li.disabled a {
+	background: rgb(235, 235, 235); border: 1px solid rgb(235, 235, 235); border-image: none; color: rgb(153, 153, 153); cursor: default;
+}
+#uIndexProductListBox .ui-pagination .previous.disabled:hover a {
+	background: rgb(235, 235, 235); border: 1px solid rgb(235, 235, 235); border-image: none; color: rgb(153, 153, 153); cursor: default;
+}
+#uIndexProductListBox .ui-pagination .next.disabled:hover a {
+	background: rgb(235, 235, 235); border: 1px solid rgb(235, 235, 235); border-image: none; color: rgb(153, 153, 153); cursor: default;
+}
+.uplan .uplan-list {
+	width: 1080px; height: auto;
+}
+.uplan .uplan-list ul {
+	width: 1080px; height: 270px; padding-bottom: 10px;
+}
+.uplan .uplan-list ul li {
+	background: rgb(255, 255, 255); transition:0.2s linear; width: 170px; height: 270px; margin-left: 12px; float: left; position: relative; cursor: pointer; -webkit-transition: all .2s linear;
+}
+.uplan .uplan-list ul li .cover {
+	left: 0px; top: 0px; width: 170px; height: 270px; display: block; position: absolute;
+}
+.uplan .uplan-list ul li .time {
+	width: 170px; height: 50px; text-align: center; display: block; position: relative;
+}
+.uplan .uplan-list ul li .time .month {
+	width: auto; height: 49px; display: inline-block;
+}
+.uplan .uplan-list ul li .time .month em {
+	padding: 0px 6px; color: rgb(51, 51, 51); line-height: 49px; font-size: 14px; font-style: normal; float: left; display: inline-block;
+}
+.uplan .uplan-list ul li .time .month img {
+	width: 15px; height: 15px; margin-top: 16px; float: left; display: inline-block;
+}
+.uplan .uplan-list ul li .time .xian {
+	left: 20px; width: 130px; height: 1px; bottom: 0px; display: block; position: absolute;
+}
+.uplan .uplan-list ul li .rate {
+	width: 170px; height: 150px; text-align: center; margin-top: 20px;
+}
+.uplan .uplan-list ul li .rate .num {
+	width: auto; height: 49px; display: inline-block;
+}
+.uplan .uplan-list ul li .rate .num .fu {
+	width: auto; height: 50px; color: rgb(255, 114, 31); line-height: 50px; font-size: 42px; font-style: normal; float: left; display: inline-block;
+}
+.uplan .uplan-list ul li .rate .num .dan {
+	width: auto; height: 50px; color: rgb(255, 114, 31); line-height: 70px; padding-left: 4px; font-size: 18px; font-style: normal; float: left; display: inline-block;
+}
+.uplan .uplan-list ul li .rate .num em {
+	width: 8px; height: 50px; color: rgb(255, 114, 31); line-height: 70px; font-size: 12px; font-style: normal; float: left; display: inline-block;
+}
+.uplan .uplan-list ul li .rate .nian {
+	width: 170px; height: 20px; text-align: center; color: rgb(153, 153, 153); line-height: 20px; font-size: 12px; display: block;
+}
+.uplan .uplan-list ul li .rate .new {
+	background: rgb(255, 174, 0); padding: 0px 12px; border-radius: 12px; width: auto; height: 24px; text-align: center; color: rgb(255, 255, 255); line-height: 24px; overflow: hidden; font-size: 12px; margin-top: 12px; display: inline-block; max-width: 130px;
+}
+.uplan .uplan-list ul li .rate .highest {
+	width: 170px; height: 28px; text-align: center; color: rgb(153, 153, 153); line-height: 28px; font-size: 12px; display: inline-block;
+}
+.uplan .uplan-list ul li .mtop {
+	height: 123px; margin-top: 47px;
+}
+.uplan .uplan-list ul li .name {
+	width: 170px; height: 49px; overflow: hidden; border-top-color: rgb(235, 235, 235); border-top-width: 1px; border-top-style: solid;
+}
+.uplan .uplan-list ul li .name em {
+	width: 100%; height: 50px; text-align: center; color: rgb(255, 114, 31); line-height: 50px; font-size: 14px; display: block; cursor: pointer;
+}
+.uplan .uplan-list ul li:first-child {
+	margin-left: 0px;
+}
+.uplan .uplan-list ul li:hover {
+	box-shadow: 0px 15px 30px rgba(0,0,0,0.1); transform: translate3d(0px, -2px, 0px); -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, .1); -webkit-transform: translate3d(0, -2px, 0);
+}
+.uplan .uplan-list ul li:hover .name em {
+	background: rgb(255, 114, 31); color: rgb(255, 255, 255);
+}
+.uplan .uplan-list ul li:hover .name em i {
+	background: 0px 0px;
+}

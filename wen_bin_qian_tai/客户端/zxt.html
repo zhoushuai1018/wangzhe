@@ -1,0 +1,91 @@
+<html lang="en">
+<head>
+  <script type="text/javascript" src="http://cdn.hcharts.cn/jquery/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="http://cdn.hcharts.cn/highcharts/highcharts.js"></script>
+
+  <script src="../js/vue/axios.min.js"></script>
+  <script src="../js/vue/vue.min.js"></script>
+  <script>
+    $(function () {
+        var uid = window.localStorage.getItem("type_tid")
+        var x=[];
+        var y=[];
+        $.ajax({
+                url:"http://localhost:8081/rate/findLiv?uid="+uid,
+                method:"get",
+                success:function (response) {
+                    for(var i=0;i<response.length;i++){
+                        x[i]=new Date(response[i].udate).toLocaleString().substring(0,9);
+                        y[i]=response[i].lilv;
+                    }
+                    
+                    
+                    $('#container').highcharts({
+                        chart: {
+                            type: 'line'
+                        },
+                        title: {
+                            text: '历史利率变化'
+                        },
+                        subtitle: {
+                            text: '利率明细'
+                        },
+                        xAxis: {
+                            
+                            categories: x
+                        },
+                        yAxis: {
+                            title: {
+                                text: 'Temperature (%)'
+                            }
+                        },
+                        tooltip: {
+                            enabled: false,
+                            formatter: function() {
+                                return '<b>'+ this.series.name +'</b>'+this.x +': '+ this.y +'°C';
+                            }
+                        },
+                        plotOptions: {
+                            line: {
+                                dataLabels: {
+                                    enabled: true
+                                },
+                                enableMouseTracking: false
+                            }
+                        },
+                        series: [{
+                            name: 'Tokyo',
+                            data: y
+                        }]
+                    });
+                }
+        })
+
+
+});
+  </script>
+</head>
+<body>
+  <div id="app">
+    <div id="container" style="min-width:700px;height:400px"></div>
+  </div>
+</body>
+<script>
+	new Vue({
+		el:"#app",
+		created () {
+			this.findTypeList();
+		},
+		data () {
+			return {
+				
+			}
+		},
+		methods: {
+			findTypeList(){//查询所有产品列表
+
+			}
+		}
+	})
+</script>
+</html>

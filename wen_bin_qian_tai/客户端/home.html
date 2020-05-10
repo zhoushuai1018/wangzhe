@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- 页面meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>后台管理系统</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport"> 
+	
+    <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../plugins/adminLTE/css/AdminLTE.css">
+    <link rel="stylesheet" href="../plugins/adminLTE/css/skins/_all-skins.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+	<script src="../plugins/jQuery/jquery-2.2.3.min.js"></script>
+    <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../js/vue/axios.min.js"></script>
+  <script src="../js/vue/vue.min.js"></script>
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+
+   <!-- 内容区域 -->
+
+
+           <div id="app">
+             <!-- 内容头部 -->
+             <section class="content-header">
+                <h1>
+                    个人中心
+                    <small>首页</small>
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="all-admin-index.html"><i class="fa fa-dashboard"></i> 首页</a></li>
+                </ol>
+            </section>
+            <!-- 内容头部 /-->
+
+            <!-- 正文区域 -->
+            <section class="content">
+
+
+                <!-- 统计数值 -->
+                <div class="row">
+                    <div class="col-lg-3 col-xs-6">
+                        <!-- small box -->
+                        <div class="small-box bg-aqua">
+                            <div class="inner">
+                                <h3>{{user.yue}}元</h3>
+
+                                <p>余额</p>
+                            </div>
+                            <div class="icon">
+                                <i class="ion ion-bag"></i>
+                            </div>
+                            <a href="http://localhost:8081/index.html" class="small-box-footer" target="_blank">充值 <i class="fa fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- ./col -->
+                    <div class="col-lg-3 col-xs-6">
+                        <!-- small box -->
+                        <div class="small-box bg-green">
+                            <div class="inner">
+                                <h3>{{user.zong}}元</h3>
+
+                                <p>总充值数</p>
+                            </div>
+                            <div class="icon">
+                                <i class="ion ion-stats-bars"></i>
+                            </div>
+                            <a href="http://localhost:8081/index.html" class="small-box-footer" target="_blank">充值 <i class="fa fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- ./col -->
+                    <div class="col-lg-3 col-xs-6">
+                        <!-- small box -->
+                        <div class="small-box bg-yellow">
+                            <div class="inner">
+                                <h3>{{user.vid}}级{{vip.name}}</h3>
+
+                                <p>VIP等级</p>
+                            </div>
+                            <div class="icon">
+                                <i class="ion ion-person-add"></i>
+                            </div>
+                            <a href="" class="small-box-footer">详细 <i class="fa fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- ./col -->
+                    <div class="col-lg-3 col-xs-6">
+                        <!-- small box -->
+                        <div class="small-box bg-red">
+                            <div class="inner">
+                                <h3>{{dingdan.length}}条</h3>
+
+                                <p>出借订单</p>
+                            </div>
+                            <div class="icon">
+                                <i class="ion ion-pie-graph"></i>
+                            </div>
+                            <a href="" class="small-box-footer">详细 <i class="fa fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- ./col -->
+
+                    
+                </div>
+                <!-- /.row -->
+               
+                
+            </section>
+            <!-- 正文区域 /-->
+
+        <!-- 内容区域 /-->
+           </div>
+</body>
+<script>
+	new Vue({
+		el:"#app",
+		created () {
+      this.uid=window.localStorage.getItem("uid");
+      this.vid=window.localStorage.getItem("vid");
+      this.findUser();
+      this.findVip();
+      this.findOrder();
+     
+		},
+		data () {
+			return {
+                uid:"",
+                money:"",
+                vid:"",
+                user:{},
+                vip:{},
+                dingdan:[],
+                vflag:false,
+                zhifu:"",
+
+			}
+		},
+		methods: {
+            findUser(){
+                axios.get("http://localhost:8081/user/findOne?uid="+this.uid).then(res =>{
+                    this.user = res.data;
+                    this.vid = res.data.vid;
+                    this.findVip();
+                })
+            },
+			findVip(){
+                
+                axios.get("http://localhost:8081/vip/findOne?vid="+this.vid).then(res =>{
+                    this.vip = res.data
+                })
+            },
+            findOrder(){
+                axios.get("http://localhost:8081/dingdan/findDingdan?uid="+this.uid).then(res =>{
+                    this.dingdan = res.data;
+                })
+            },
+            cz(){
+                this.vflag = true;
+            },
+            qx(){
+                this.vflag = false;
+            },
+            addmoney(){
+                axios.get("http://localhost:8081/order/zhifu?money="+this.money).then(res =>{
+                    alert(JSON.stringify(res.data))
+                    this.zhifu = res.data
+                })
+            }
+		}
+	})
+</script>
+</html>

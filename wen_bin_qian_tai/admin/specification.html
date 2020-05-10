@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>品牌管理</title>
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../plugins/adminLTE/css/AdminLTE.css">
+    <link rel="stylesheet" href="../plugins/adminLTE/css/skins/_all-skins.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+	<script src="../plugins/jQuery/jquery-2.2.3.min.js"></script>
+    <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+	<script src="../js/vue/axios.min.js"></script>
+	<script src="../js/vue/vue.min.js"></script>
+    
+</head>
+<body class="hold-transition skin-red sidebar-mini">
+  <!-- .box-body -->
+                   <div id="app">
+					<div class="box-header with-border">
+                        <h3 class="box-title">产品明细管理</h3>
+                    </div>
+
+                    <div class="box-body">
+
+                        <!-- 数据表格 -->
+                        <div class="table-box">
+
+                            <!--工具栏-->
+                            <div class="pull-left">
+                                <div class="form-group form-inline">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default" title="新建" data-toggle="modal" data-target="#editModal" ><i class="fa fa-file-o"></i> 新建</button>
+                                        <button type="button" class="btn btn-default" title="删除" ><i class="fa fa-trash-o"></i> 删除</button>           
+                                        <button type="button" class="btn btn-default" title="刷新" onclick="window.location.reload();"><i class="fa fa-refresh"></i> 刷新</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-tools pull-right">
+                                <div class="has-feedback">
+							                                         
+                                </div>
+                            </div>
+                            <!--工具栏/-->
+
+			                  <!--数据列表-->
+			                  <table id="dataList" class="table table-bordered table-striped table-hover dataTable">
+			                      <thead>
+			                          <tr>
+			                              <th class="" style="padding-right:0px">
+			                                  <input id="selall" type="checkbox" class="icheckbox_square-blue">
+			                              </th> 
+										  <th class="sorting_asc">产品明细编号</th>
+									      <th class="sorting">产品所属类型</th>									      
+									      <th class="sorting">产品利率</th>									     				
+										  <th class="text-center">产品期数</th>
+										  <th class="text-center">产品金额</th>
+										  <th class="text-center">创建时间</th>
+										  <th class="text-center">结束时间</th>
+										  <th class="text-center">加入人数</th>
+										  <th class="text-center">产品状态</th>
+			                          </tr>
+			                      </thead>
+			                      <tbody>
+			                          <tr v-for="(c,index) in ChanpinLst">
+			                              <td><input  type="checkbox" ></td>			                              
+										  <td>{{c.cid}}</td>
+									      <td>{{c.month}}个月</td>									     
+										  <td>{{c.lilv}}%</td>		
+										  <td>{{c.qishu}}</td>	 
+										  <td>{{c.benjin}}</td>	   
+										  <td>{{c.startdate}}</td>	   
+										  <td>{{c.lastdate}}</td>	   
+										  <td>{{c.num}}</td>	   
+										  <td v-if="c.status==0">
+											  进行中
+										  </td>	  
+										  <td v-if="c.status==1">
+											  已结束
+										  </td>                                
+		                                  <td class="text-center">                                           
+		                                 	  <button type="button" class="btn bg-olive btn-xs" data-toggle="modal" data-target="#editModal" @click="updChanpin(c.cid)" >修改</button>                                           
+		                                  </td>
+			                          </tr>
+			                      </tbody>
+			                  </table>
+			                  <!--数据列表/-->                        
+							  
+							 
+                        </div>
+                        <!-- 数据表格 /-->
+                        
+                        
+                        
+                        
+                     </div>
+                    <!-- /.box-body -->
+         
+<!-- 编辑窗口 -->
+<div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" >
+	<div class="modal-content">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h3 id="myModalLabel">产品明细编辑</h3>
+		</div>
+		<div class="modal-body">		
+			<table class="table table-bordered table-striped"  width="800px">
+		      	<tr>
+		      		<td>产品所属类型</td>
+		      		  <td> 
+						<select v-model="Chanpin.tid" @change="updLilv()">
+							<option v-for="(t,index) in TypeList" :value="t.tid">{{t.month}}月</option>
+						</select>
+					  </td>
+				  </tr>		
+				<tr>
+		      		<td>产品利率</td>
+		      		<td><input  class="form-control" placeholder="产品利率"  v-model="Chanpin.lilv" readonly="readonly">  </td>
+				</tr>
+				<tr>
+		      		<td>产品期数</td>
+		      		<td><input  class="form-control" placeholder="产品期数"  v-model="Chanpin.qishu">  </td>
+				</tr> 
+				<tr>
+		      		<td>产品金额</td>
+		      		<td><input  class="form-control" placeholder="产品金额"  v-model="Chanpin.benjin">  </td>
+				</tr> 
+				<tr>
+		      		<td>创建时间</td>
+		      		<td><input  class="form-control" placeholder="创建时间" v-model="startdate" readonly="readonly" >  </td>
+				</tr> 
+				<tr>
+		      		<td>结束时间</td>
+		      		<td><input  class="form-control" placeholder="结束时间" v-model="lastdate" readonly="readonly" >  </td>
+				</tr>   	
+		      	<tr>
+		      		<td>产品状态</td>
+		      		<td>
+						  <input type="radio" v-model="Chanpin.status" name="status" value="0">进行中
+						  <input type="radio" v-model="Chanpin.status" name="status" value="1">已结束   
+					</td>
+		      	</tr>		      	
+			 </table>				
+		</div>
+		<div class="modal-footer">						
+			<button class="btn btn-success" data-dismiss="modal" aria-hidden="true" @click="upd()">保存</button>
+			<button class="btn btn-default" data-dismiss="modal" aria-hidden="true">关闭</button>
+		</div>
+	  </div>
+	</div>
+</div>
+				   </div>
+   
+</body>
+<script>
+	new Vue({
+		el:"#app",
+		created () {
+			this.findList();
+			this.findTypeList();
+		},
+		data () {
+			return {
+				ChanpinLst:[],
+				TypeList:[],
+				Chanpin:{},
+				startdate:"",
+				lastdate:""
+			}
+		},
+		methods: {
+			findList(){
+				axios.get("http://localhost:8081/chanpin/findChanpinAndTypeAndRate").then(res =>{
+					this.ChanpinLst = res.data;
+					for(var i=0;i<this.ChanpinLst.length;i++){
+						this.ChanpinLst[i].startdate=this.StringToDate(this.ChanpinLst[i].startdate).substring(0,9);
+						this.ChanpinLst[i].lastdate=this.StringToDate(this.ChanpinLst[i].lastdate).substring(0,9);
+					}
+				})
+			},
+			StringToDate(date){
+				return new Date(date).toLocaleString();
+			},
+			updChanpin(cid){
+				axios.get("http://localhost:8081/chanpin/findChanpinAndTypeAndRateOne/"+cid).then(res =>{
+					this.Chanpin = res.data;
+					this.startdate=this.StringToDate(this.Chanpin.startdate);
+					this.lastdate=this.StringToDate(this.Chanpin.lastdate);
+				})
+			},
+			findTypeList(){//查询所有产品列表
+				axios.get("http://localhost:8081/type/findTypeAndRateList").then(res =>{
+					this.TypeList = res.data;
+				})
+			},
+			updLilv(){
+				for(var i=0;i<this.TypeList.length;i++){
+					if(this.TypeList[i].tid==this.Chanpin.tid){
+						this.Chanpin.lilv=this.TypeList[i].lilv;
+					}
+				}
+			},
+			upd(){
+				
+				axios.post("http://localhost:8081/chanpin/updChanpin",this.Chanpin).then(res =>{
+					location.reload();
+				})
+			}
+		}
+	})
+</script>
+</html>

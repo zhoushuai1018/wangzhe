@@ -1,0 +1,27 @@
+#uplanIndex {
+	-webkit-font-smoothing: antialiased;
+}
+#uplanIndex :focus {
+	outline: 0px;
+}
+#uplanIndex input {
+	outline: 0px;
+}
+#uplanIndex .container_12_1080 {
+	width: 1080px; margin-right: auto; margin-left: auto;
+}
+#uplanIndex .color-white-bg {
+	background: rgb(255, 255, 255);
+}
+#uplanIndex .ui-title {
+	padding: 30px 0px; color: rgb(43, 43, 43); font-size: 18px;
+}
+#uplanIndex .ui-title .fn-right {
+	color: rgb(156, 156, 156); font-size: 12px;
+}
+#uplanIndex .uplan {
+	margin: 37px auto 0px; width: 1080px; height: auto;
+}
+#uplanIndex .compliance-uplan {
+	background: rgb(255, 255, 255); margin: 0px auto; width: 1080px; height: auto; padding-top: 30px;
+}
